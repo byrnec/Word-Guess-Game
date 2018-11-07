@@ -1,0 +1,47 @@
+div {
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+}
+
+body {
+    color: black;
+    background-color: orange;
+    /* background-image: url("bgdesert.jpg") */
+    font-family: 'Indie Flower', cursive;
+    border: 12px solid black;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    width: 100%;
+
+}
+
+p {
+
+    color: black;
+    padding-top: 10px;
+    font-family: 'Indie Flower', cursive;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+hr {
+    width: 70%;
+}

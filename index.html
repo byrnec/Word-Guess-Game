@@ -1,0 +1,131 @@
+<!-- Choose a theme for your game! In the demo, we picked an 80s theme: 80s questions, 80s sound and an 80s aesthetic. You can choose any subject for your theme, though, so be creative!
+Use key events to listen for the letters that your players will type. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Kumar+One+Outline" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="game">
+        <div>
+
+            <h1>Word Guess Game</h1>
+
+            <h2>Press any key to get started!</h2>
+            <!-- If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _. As the user guesses the correct letters, reveal them: m a d o _  _ a. -->
+            <p> <strong>Word:</strong> <span id="userText"> </span></p>
+            <p> <strong>Number of Guesses Remaining (for the user):</strong> <span id="numberGuessesText"></span></p>
+
+            <p> <strong>Letters Already Guessed: (displayed like L Z Y H).</strong><span id="lettersAlreadyGuessed"></span></p>
+            <hr>
+            <p> <strong>Wins: (# of times user guessed the word correctly) <strong> <span id="wins">0</span></p>
+            <p> <strong>Losses: </strong><span id="losses">0</span></p>
+        </div>
+
+
+    </div>
+    <!-- After the user wins/loses the game should automatically choose another word and make the user play it.-->
+
+
+    <script type="text/javascript">
+
+
+        //user and comp display 
+        var userText = document.getElementById("userText");
+        var wordText = document.getElementById("wordText");
+
+        //tracking variables
+
+        var wins = document.getElementById("wins");
+        var loses = document.getElementById("losses");
+
+        // DEFINE VARIABLES-- listOfAllGuesses has no value yet--array is an empty container
+        var listOfAllGuesses = [];
+        var userGuess;
+        var word = ["ghosts", "pumpkins", "goblins", "candy"]
+        var userChoices = [char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};];
+
+        // Use key events to listen for the letters that your players will type. This function is run whenever the user presses a key.
+        document.onkeyup = function (event) {
+
+    //Check to see if letter, if not send message: validLetter
+        }
+            // Determines which key was pressed.
+            var userGuess = event.key;
+
+             for (var i = 0; i < alphabet.length; i++) {
+        if (userGuess === alphabet.charAt(i)) {
+            isLetter = true;
+
+
+    if (isLetter == false && enter != 13) {
+        $('#messages').html(messages.validLetter);
+    }
+
+            // For Loop Elements Repeats 26 Times
+            for (var i = 1; i < 26; i++) {
+
+                // Storing your answer for userGuess
+                userGuess = prompt("What's your letter guess?");
+
+                // pushes userGuess to the back of listen
+                listOfAllGuesses.push(userGuess);
+            }
+
+            // Iterating through whole length of userGuess
+            for (var i = 0; i < userGuess.length; j++) {
+
+                // Alerts you that your userGuess was a match 
+                alert(userGuess[i] " was correct!");
+            }
+
+            //check conditionals
+
+            // If user picks G, add it to the first character(0)
+
+            if (userGuess === "g") {
+                userText.textContent = "Correct!";
+                wordText.textContent = "#";
+
+                // if this was the last empty space, 
+                wins.textContent = parseInt(wins.textContent) + 1;
+            }
+
+            else if (userGuess === "h") {
+                userText.textContent = "Correct!";
+                wordText.textContent = "#";
+    
+    else if (userGuess === "o") {
+                    userText.textContent = "Correct!";
+                    wordText.textContent = "#";
+    
+    else if (userGuess === "s") {
+                        userText.textContent = "Correct!"; Í
+                        wordText.textContent = "#";
+    
+    else if (userGuess === "t") {
+                            userText.textContent = "Correct!";
+                            wordText.textContent = "#";
+
+
+
+    //  * If user picks ANYTHING OTHER THAN G, H, O, S, T
+    else (userGuess !== "g h o s t " &&){
+                                userText.textContent = "You lose!";
+                                // if this was the last empty space, 
+                                loses.textContent = parseInt(loses.textContent) + 1;
+
+                            }
+
+    </script>
+</body>
+
+</html>
